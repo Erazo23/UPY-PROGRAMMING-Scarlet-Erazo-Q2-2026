@@ -1,0 +1,33 @@
+
+PPP Audit Logging
+START
+    INITIALIZE users, subjects, notes
+    
+    logged_in ← FALSE
+    
+    WHILE logged_in IS FALSE:
+        INPUT user, password
+        IF user AND password ARE VALID:
+            logged_in ← TRUE
+            SET current_role
+        ELSE:
+            OUTPUT "Incorrect credentials"
+            
+    IF current_role IS 'student':
+        FOR EACH subject IN subjects:
+            DISPLAY grade
+            IF grade >= 8.0: ADD TO passed
+            ELSE: ADD TO failed
+        DISPLAY passed
+        IF failed IS NOT EMPTY: DISPLAY failed
+        
+    ELSE IF current_role IS 'professor':
+        DISPLAY student_list
+        INPUT target_student, subject, new_grade
+        IF confirmation IS 'yes':
+            UPDATE notes
+            
+    ELSE IF current_role IS 'coordinator':
+        DISPLAY formatted_records_table
+        
+END

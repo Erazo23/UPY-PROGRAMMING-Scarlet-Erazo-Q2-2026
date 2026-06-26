@@ -1,10 +1,5 @@
-## "Classwork 09" - Spanish Verb Conjugator
-This project implements an automated Spanish Regular Verb Conjugator developed as a programming assignment. The objective of the task was to design an algorithm capable of taking a regular Spanish verb in its infinitive form and outputting its complete present indicative conjugation across all six grammatical persons.
+## "Classwork 10" - Audit Logging
+This system functions as an access control system for a school. First, the program prompts the user to enter a username and password; if the credentials are correct, it identifies the user’s role (student, teacher, or coordinator) to display the appropriate menu. If the user is a student, the system displays their list of courses and grades, automatically indicating which courses they have passed and which are pending. If the user is a teacher, the program displays a list of students and allows them to update a grade for a specific course, subject to confirmation. If the user is a coordinator, the system generates a comprehensive table where they can view the grades of all students across all courses in an organized manner.
 
-To accomplish this, a flowchart was first designed to structure the logic of the program into three distinct phases. In the Input phase, the program requests a verb from the user. During the Processing phase, the program slices the string to separate the stem (everything except the last two letters) from the ending (-ar, -er, or -ir). It then evaluates the ending type to pull the correct list of grammatical suffixes from a predefined dictionary structure. Finally, in the Output phase, the algorithm runs a continuous loop that pairs each personal pronoun (yo, tu, el, etc.) with its corresponding conjugated ending, printing the combined results line by line.
-
-The final Python script accurately implements this flowchart. It utilizes direct dictionary mapping for quick inflection lookups and uses Python's native enumerate() function to efficiently loop through the pronouns and suffixes simultaneously, ensuring a clean, robust, and readable solution.
-
-Artificial Intelligence (AI) Statement
-
-In line with academic integrity rules, I, Scarlet Verenice Erazo Aranda, declare that I used Artificial Intelligence (AI) tools to help me with this project. The AI was used only as an assistant to clean up the Python code style, organize the text for this documentation, and translate the project details into English. The main idea of the algorithm, the design of the flowchart, and the actual programming logic were completely created by me.
+AI Declaration:
+I, Scarlet Verenice Erazo Aranda, declare that no Artificial Intelligence tools were used in the completion of this project; the code, logic, and documentation were developed independently to meet the academic requirements of the course.
