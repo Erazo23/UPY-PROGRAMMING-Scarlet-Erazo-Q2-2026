@@ -1,4 +1,4 @@
-## "Classwork 10" - Audit Logging
+## "Classwork 10" - School-Management-Sistem
 This system functions as an access control system for a school. First, the program prompts the user to enter a username and password; if the credentials are correct, it identifies the user’s role (student, teacher, or coordinator) to display the appropriate menu. If the user is a student, the system displays their list of courses and grades, automatically indicating which courses they have passed and which are pending. If the user is a teacher, the program displays a list of students and allows them to update a grade for a specific course, subject to confirmation. If the user is a coordinator, the system generates a comprehensive table where they can view the grades of all students across all courses in an organized manner.
 
 AI Declaration:
