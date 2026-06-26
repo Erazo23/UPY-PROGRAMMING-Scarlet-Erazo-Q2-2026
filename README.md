@@ -1,11 +1,10 @@
-## Classwork 08 - Numerical Integration
+## "Classwork 09" - Spanish Verb Conjugator
+This project implements an automated Spanish Regular Verb Conjugator developed as a programming assignment. The objective of the task was to design an algorithm capable of taking a regular Spanish verb in its infinitive form and outputting its complete present indicative conjugation across all six grammatical persons.
 
-In this project, I made a program to calculate the area under a curve using numerical integration. The program works for 6 different functions, like $x^2-4x+3$, $\sin(x)$, $e^x$, and others.
+To accomplish this, a flowchart was first designed to structure the logic of the program into three distinct phases. In the Input phase, the program requests a verb from the user. During the Processing phase, the program slices the string to separate the stem (everything except the last two letters) from the ending (-ar, -er, or -ir). It then evaluates the ending type to pull the correct list of grammatical suffixes from a predefined dictionary structure. Finally, in the Output phase, the algorithm runs a continuous loop that pairs each personal pronoun (yo, tu, el, etc.) with its corresponding conjugated ending, printing the combined results line by line.
 
-### What I did in this assignment:
-1. **Wrote the Pseudocode (`PPP.txt`):** I created the logic of the program in plain English. I followed the class rules, using `<-` for variables and `#` for my comments. It includes all 4 methods: Left Riemann Sum, Right Riemann Sum, Midpoint, and Trapezoid.
-2. **Made the Flowchart (`Flowchart.png`):** I built a diagram to show how the loops work for every method and how the program decides what to do based on the 3 modes (Default, Custom, and Auto-adjust).
-3. **Coded the Python Script (`numerical_integration.py`):** I wrote the Python code to do the math. The program calculates the exact area using calculus and compares it with the approximation to find the absolute and relative errors. For Mode 3, I made a while loop that doubles the number of splits ($n$) automatically until the error is smaller than the limit.
+The final Python script accurately implements this flowchart. It utilizes direct dictionary mapping for quick inflection lookups and uses Python's native enumerate() function to efficiently loop through the pronouns and suffixes simultaneously, ensuring a clean, robust, and readable solution.
 
-### AI Use Declaration:
-I declare that I used AI as an assistant to help me fix some syntax bugs in the pseudocode blocks and organize the flowchart logic.
+Artificial Intelligence (AI) Statement
+
+In line with academic integrity rules, I, Scarlet Verenice Erazo Aranda, declare that I used Artificial Intelligence (AI) tools to help me with this project. The AI was used only as an assistant to clean up the Python code style, organize the text for this documentation, and translate the project details into English. The main idea of the algorithm, the design of the flowchart, and the actual programming logic were completely created by me.
